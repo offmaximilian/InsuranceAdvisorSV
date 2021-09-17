@@ -1,0 +1,94 @@
+:root{
+    --navbar-backgroundcolor: #f5f5f7;
+    --navbar-color: rgb(0, 0, 0);
+    --background-color-hover: rgb(184, 184, 184);
+    --color-text-hover: black;
+    --color-text-active: purple;
+
+    --backgroundcolor-active: red;
+}
+.active{
+    width: 35%;
+    height: 35%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: white;
+}
+
+h1{
+    padding-top: 10%;
+    padding-left: 10%;
+
+}
+.DownloadSreenshot{
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.p{
+    padding-top: 5%;
+    padding-left: 10%;
+}
+@media only screen and (min-width: 768px){
+    .DownloadSreenshot{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1000px){
+    
+}
+
+/*ab hier die nav bar*/
+.topnav{
+    background-color: var(--navbar-backgroundcolor);
+    overflow: hidden;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: var(--navbar-color);
+    text-align: center;
+    padding: 1.5em .5em;
+    text-decoration: none;
+    font-size: 1em;
+}
+.topnav a:hover{
+    background-color: var(--background-color-hover);
+    color: var(--color-text-hover);
+}
+/* Add an active class to highlight the current page?
+funktioniert nicht? */
+.topnav a.actice{
+    background-color: var(--backgroundcolor-active);
+    color: var(--color-text-active);
+}
+/* Hide the link that should open and close the topnav on small screens 
+--> browser version hier*/
+.topnav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon{
+        float: right;
+        display: block;
+    } 
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
