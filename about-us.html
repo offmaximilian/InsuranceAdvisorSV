@@ -6,34 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about-us-styles.css">  
     <title>Über uns</title>
 </head>
 
 <body>
     <header>
-        <script>
-            window.onscroll = function () { myFunction };
-            var header = document.getElementById("myStick");
-            var sticky = header.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
-                } else {
-                    header.classList.remove("sticky");
-                }
-            }
-        </script>
-
-        <nav>
-            <img src="/ref/logo.png" alt="Logo" class="px-16 py-16">
-            <ul class="text-center sm:text-left px-8">
-
-                <a href="/src/downloadpage.html" class="mx-auto">Download</a>
-                <a href="/src/about-us.html">Über uns</a>
-
-            </ul>
-        </nav>
+        <div class="topnav" id = "myStick">
+            <nav>
+                <img src="/ref/logo.png" alt="Logo" class="px-16 py-16">
+                <ul class="text-center sm:text-left px-8">
+    
+                    <button class = "shadow-xl py-2 px-4 rounded " href="/src/downloadpage.html">Download</button>
+                    <button class ="shadow-xl py-2 px-4 rounded" href="/src/about-us.html">Über uns</button>
+    
+                </ul>
+            </nav>
+        </div>
+        
         <hr>
     </header>
 
@@ -72,13 +62,27 @@
     </section>
 
     <footer class="footer">
-        <ul>
-            <a href="/src/downloadpage.html">Download</a>
-            <a href="/src/impressum.html">Impresum</a>
-            <a href="/src/impressum.html">Datenschutzerklärung</a>
-            <a href="/src/index.html">Homepage</a>
+        <ul class = "ml-8 mt-8 mb-4 space-x-3">
+            <button class = "shadow-xl py-2 px-4 rounded" onclick="window.location.href='downloadpage.html;'">Download</button>
+            <button class = "shadow-xl py-2 px-4 rounded" onclick="window.location.href='impressum.html;'">Impresum</button>
+            <button class = "shadow-xl py-2 px-4 rounded" onclick="window.location.href='impressum.html;'">Datenschutzerklärung</button>
+            <button class = "shadow-xl py-2 px-4 rounded" onclick="window.location.href='index.html;'">Homepage</button>
         </ul>
     </footer>
 </body>
+
+<script>
+    window.onscroll = function () { myFunction };
+    var header = document.getElementById("myStick");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+</script>
 
 </html>

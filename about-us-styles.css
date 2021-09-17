@@ -1,0 +1,11 @@
+:root{
+    --navbar-backgroundcolor: #9b9494;
+    --navbar-color: green;
+    --background-color-hover: white;
+    --color-text-hover: black;
+}
+
+.topnav a:hover{
+    background-color: var(--background-color-hover);
+    color: var(--color-text-hover);
+}
