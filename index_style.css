@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: #f5f5f7;
+}
+
+/* --------------------------------------------------Allgemein-------------------------------------------------- */
+
+.download-button {
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    color: black;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: 100;
+    padding: 6px;
+    background-color: #00000000;
+    border: solid black 2px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 50%;
+    max-width: 200px;
+    min-width: 120px;
+ }
+ 
+ .download-button:hover {
+    background: rgba(203, 203, 203, 0.33);
+    border: solid black 2px;
+    border-radius: 100px;
+    text-decoration: none;
+ }
+
+/* --------------------------------------------------Header-------------------------------------------------- */
+
+header{
+    /*background-color: #1E1E24;*/
+    background: #f5f5f7;
+    height: 50px;
+}
+
+.logo_mobile_wrapper{
+    text-align: center;
+}
+
+.logo_mobile{
+    height: 50px;
+}
+
+/* --------------------------------------------------Marketing-------------------------------------------------- */
+
+.marketing{
+    height: 617px;
+}
+
+.marketing_image_wrapper{
+    text-align: center;
+    background: #CDCDCB;
+}
+
+.marketing_image{
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.dowload-button_wrapper{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.marketing_text{
+    /*background-image: linear-gradient(#1E1E24, #ffffff);*/
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-bottom: auto;
+}
+
+.marketing_header{
+    margin-top: 0;
+    font-size: 40px;
+}
+
+.marketing_paragraph{
+    /*background: -webkit-linear-gradient(white, rgb(109, 109, 109));*/
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/* --------------------------------------------------Showcase-------------------------------------------------- */
+
+.showcase{
+    text-align: center;
+}
+
+.showcase_header{
+    margin-top: 0;
+}
+
+.showcase_image{
+    max-width:400px;
+    width: 100%;
+}
+
+.showcase_text{
+    padding-bottom: 10px;
+}
+
+.showcase_paragraph{
+    margin-bottom: 0;
+}
+
+.showcase_one{
+    background: #CDCDCB;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.showcase_two{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.showcase_three{
+    background: #CDCDCB;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* --------------------------------------------------Ratings-------------------------------------------------- */
+
+.ratings{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.stars_image{
+    width: 65%;
+}
+
+.stars_all{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.stars_web-only{
+    display: none;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* --------------------------------------------------Tablet-switch-------------------------------------------------- */
+
+@media only screen and (min-width: 863px) {
+    .marketing{
+        display: flex;
+        align-items: center;
+        height: unset;
+        background: #CDCDCB;
+    }
+
+    .marketing_image_wrapper{
+        text-align: center;
+        background: none;
+    }
+
+    .marketing_image{
+        max-width: unset;
+        height: 100%;
+        width: auto;
+    }
+
+    .marketing_text{
+        width: 50%;
+        background-image: none;
+    }
+
+    .showcase_one{
+        background: none;
+    }
+    
+    .showcase_two{
+        background: #CDCDCB;
+    }
+    
+    .showcase_three{
+        background: none;
+    }
+
+    .ratings{
+        background: #CDCDCB;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .stars_all{
+        flex-basis: 40%;
+    }
+
+    .stars_web-only{
+        flex-basis: 40%;
+        display: block;
+    }
+
+    .dowload-button_wrapper{
+        padding-bottom: 0;        
+    }
+
+}
+
+@media only screen and (min-width: 997px) {
+    .showcase_one{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .showcase_two{
+        display: flex;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .showcase_three{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .showcase_text{
+        padding-right: 5%;
+    }
+
+    .showcase_text{
+        width: 50%;
+    }
+
+    .showcase_header{
+        font-size: 46px;
+    }
+
+    .showcase_paragraph{
+        font-size: 22px;
+    }
+}
