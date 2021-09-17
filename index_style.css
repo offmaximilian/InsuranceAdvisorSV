@@ -32,7 +32,7 @@ main{
  }
  
  .download-button:hover {
-    background: rgba(203, 203, 203, 0.33);
+    background-color: #b9b9b9;
     border: solid black 2px;
     border-radius: 100px;
     text-decoration: none;
@@ -47,7 +47,6 @@ header{
 }
 
 .logo_mobile_wrapper{
-    text-align: center;
 }
 
 .logo_mobile{
@@ -57,7 +56,7 @@ header{
 /* --------------------------------------------------Marketing-------------------------------------------------- */
 
 .marketing{
-    height: 617px;
+    
 }
 
 .marketing_image_wrapper{
@@ -209,6 +208,10 @@ header{
         flex-wrap: wrap;
     }
 
+    .ratings > *{
+        flex-basis: 100%;
+    }
+
     .stars_all{
         flex-basis: 40%;
     }
@@ -222,15 +225,31 @@ header{
         padding-bottom: 0;        
     }
 
-}
 
-@media only screen and (min-width: 997px) {
+
+
+    .showcase_image{
+        max-width: unset;
+    }
+
     .showcase_one{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    .showcase_one > *{
+        flex-basis: 100%;
+    }
+
+    .showcase_two > *{
+        flex-basis: 100%;
+    }
+
+    .showcase_three > *{
+        flex-basis: 100%;
     }
 
     .showcase_two{
@@ -249,11 +268,11 @@ header{
     }
 
     .showcase_text{
-        padding-right: 5%;
+        padding-bottom: 0;
     }
 
     .showcase_text{
-        width: 50%;
+
     }
 
     .showcase_header{
@@ -263,4 +282,18 @@ header{
     .showcase_paragraph{
         font-size: 22px;
     }
+
+    header{
+        height: 70px;
+    }
+    
+    .logo_mobile_wrapper{
+    }
+    
+    .logo_mobile{
+        height: 70px;
+    }
+
+/* --------------------------------------------------Slideshow-stuff-------------------------------------------------- */
+
 }
