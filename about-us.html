@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Über uns</title>
+</head>
+
+<body>
+    <header>
+        <script>
+            window.onscroll = function () { myFunction };
+            var header = document.getElementById("myStick");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <nav>
+            <img src="/ref/logo.png" alt="Logo" class="px-16 py-16">
+            <ul class="text-center sm:text-left px-8">
+
+                <a href="/src/downloadpage.html" class="mx-auto">Download</a>
+                <a href="/src/about-us.html">Über uns</a>
+
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <section class=" max-w-screen-lg mx-auto pb-10 flex justify-center">
+        <img src="/ref/das-team.png" alt="Das Team">
+    </section>
+
+    <section class="max-w-screen-lg mx-auto pb-10 flex justify-center">
+        <div
+            class="text-xl transition delay-150 ease-in-out duration-700 transform hover:-translate-y-1 hover:scale-150">
+            <h1 class="font-black text-3xl">Das Team</h1>
+            <h2 class="font-bold">Die fünf DHler</h2>
+        </div>
+    </section>
+
+    <section class="max-w-screen-lg mx-auto pb-10 flex justify-center">
+        <div class="text-center font-light break-normal lg:w-1/2 p-2">
+            <div class="transition duration-500 ease-in-out hover:scale-110">
+                <span class="block md:px-6 md:py-4">Wir sind duale Studenten bei der SV Informatik in Mannheim und
+                    Stuttgart.</span>
+                <span class="block md:px-6 md:py-4">Diese Website ist ein gemeinsames Projekt für die SV
+                    Informatik.</span>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="flex flex-wrap gap-4 justify-center">
+        <img src="/ref/platzhalter.png" alt="platzhalter app screenshot">
+        <img src="/ref/platzhalter.png" alt="platzhalter app screenshot">
+        <img src="/ref/platzhalter.png" alt="platzhalter app screenshot">
+        <img src="/ref/platzhalter.png" alt="platzhalter app screenshot">
+        <img src="/ref/platzhalter.png" alt="platzhalter app screenshot">
+        <img src="/ref/platzhalter.png" alt="platzhalter app screenshot">
+    </section>
+
+    <footer class="footer">
+        <ul>
+            <a href="/src/downloadpage.html">Download</a>
+            <a href="/src/impressum.html">Impresum</a>
+            <a href="/src/impressum.html">Datenschutzerklärung</a>
+            <a href="/src/index.html">Homepage</a>
+        </ul>
+    </footer>
+</body>
+
+</html>
