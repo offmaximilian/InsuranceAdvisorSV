@@ -1,0 +1,181 @@
+:root{
+    --navbar-backgroundcolor: #ff0000;
+    --navbar-color: white;
+    --background-color-hover: rgb(184, 184, 184);
+    --color-text-hover: black;
+    --color-text-active: purple;
+    --backgroundcolor-active: red;
+}
+
+/*team-image_stuff*/
+
+.team-introduction_image{
+  background-image: url(ref/team-images/team-image.jpg);
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 610px;
+  z-index: -1;
+}
+
+.team-introduction_text{
+  width: 80%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: #666666ad;
+  border-radius: 50px;
+  padding: 10px 10px;
+  max-width: 700px;
+}
+
+.team-introduction_text_header{
+  font-size: 42px;
+  margin-bottom: 25px;
+}
+
+.team-introduction_text_paragraph{
+  font-size: 18px;
+}
+
+/*team-image_stuff-ende*/
+
+.personal_profiles_desktop{
+  width: 100%;
+  text-align: center;
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px 12px;
+
+  display: none;
+  
+}
+
+.personal_profiles_tablet{
+  width: 100%;
+  text-align: center;
+  max-width: 1600px;
+  margin: auto;
+  padding: 50px 12px;
+
+  display: none;
+}
+
+.personal_profiles_mobile{
+    width: 100%;
+    text-align: center;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.personal_profile_mobile_image-wrapper{
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+}
+
+#background_needs-change{
+  background-color: #e6e6e6;
+}
+
+
+.profile_pic{
+  width: 90%;
+  max-width: 450px;
+}
+
+.profile_pic_desktop{
+  width: 90%;
+  max-width: 450px;
+
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.profile_pic_desktop:hover{
+  -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+@media only screen and (min-width: 929px) {
+  .personal_profiles_tablet{
+    display: block;
+  }
+
+  .personal_profiles_mobile{
+    display: none;
+  }
+
+  .personal_profile_mobile_image-wrapper{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1030px) {
+  .team-introduction_text_header{
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  
+  .team-introduction_text_paragraph{
+    font-size: 20px;
+  }
+
+  .profile_pic{
+    max-width: 500px;
+  }
+
+  .profile_pic_desktop{
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1533px) {
+  .team-introduction_text{
+    max-width: 750px;
+  }
+
+  .team-introduction_text_header{
+    font-size: 60px;
+    margin-bottom: 25px;
+  }
+  
+  .team-introduction_text_paragraph{
+    font-size: 22px;
+  }
+
+  .personal_profiles_mobile{
+    display: none;
+  }
+  
+  .personal_profiles_tablet{
+    display: none;
+  }
+
+  .personal_profiles_desktop{
+    display: block;
+  }
+
+  #profile-left-top{
+    margin-top: 450px;
+  }
+
+  #profile-right-top{
+    margin-top: 450px;
+  }
+
+  #profile-center-top{
+    margin-top: -450px;
+  }
+
+  #profile-center-bottom{
+    margin-top: -900px;
+  }
+}
