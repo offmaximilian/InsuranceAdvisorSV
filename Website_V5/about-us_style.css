@@ -10,14 +10,17 @@
 /*team-image_stuff*/
 
 .team-introduction_image{
-  background-image: url(ref/team-images/team-image.jpg);
-  background-color: #cccccc;
+  background-image: url(ref/team-images/team-image_new.jpg);
+  background-color: #666666;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   height: 610px;
   z-index: -1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-introduction_text{
@@ -44,6 +47,10 @@
 }
 
 /*team-image_stuff-ende*/
+
+/*kompass-stuff*/
+
+/*kompass-stuff_ende*/
 
 .personal_profiles_desktop{
   width: 100%;
@@ -115,6 +122,13 @@
 
   .personal_profile_mobile_image-wrapper{
     display: none;
+  }
+
+  .team-introduction_image{
+    height: 1000px;
+    max-width: unset;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
